@@ -1,7 +1,7 @@
 
 # Typeface Source Sans Variable
 
-The CSS and web font files to easily self-host **Source Sans Variable**. This package is inspired by the effort of Kyle Mathews to create [NPM packages for all typefaces](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/).
+The CSS and web font files to easily self-host **Source Sans Variable**. This package is inspired by the effort of Kyle Mathews to create [npm packages for all typefaces](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/).
 
 ## Install
 
