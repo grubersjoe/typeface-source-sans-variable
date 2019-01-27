@@ -1,7 +1,7 @@
 
 # Typeface Source Sans Variable
 
-The CSS and web font files to easily self-host **Source Sans Variable**. This package is inspired by the effort of Kyle Mathews to create [npm packages for all typefaces](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/).
+The CSS and web font files to easily self-host [Source Sans Variable](https://github.com/adobe-fonts/source-sans-pro). This package is inspired by the effort of Kyle Mathews to create [npm packages for all typefaces](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/) for better font loading performance. 
 
 ## Install
 
@@ -21,5 +21,18 @@ To use, simply require the package in your project’s entry file e.g.
 
 ```javascript
 // Load Source Sans Variable typeface
-require('typeface-source-sans-variable')
+import 'typeface-source-sans-variable';
+```
+
+## Progressive enhancement
+
+[All major browser support variable fonts as of 2018](https://caniuse.com/#feat=variable-fonts). Still, it's probably a good idea to use the following CSS selector to activate the variable font in supported browsers only:
+
+```css
+/* Checks if variable fonts are supported */
+@supports (font-variation-settings: normal) {
+    html {
+      font-family:  "Source Sans Variable", sans-serif;
+    }
+}
 ```
