@@ -1,16 +1,31 @@
 {
   "name": "typeface-source-sans-variable",
-  "version": "2.045.1",
+  "version": "2.045.2",
+  "author": "Jonathan Gruber <gruberjonathan@gmail.com>",
+  "license": "MIT",
   "description": "Source Sans Variable typeface",
+  "repository": "https://github.com/grubersjoe/typeface-source-sans-variable",
   "main": "index.css",
+  "files": [
+    "./*",
+    "files/*"
+  ],
   "keywords": [
     "typeface",
     "font",
     "font family",
     "google fonts",
+    "source sans variable",
     "source-sans-variable"
   ],
-  "author": "Jonathan Gruber <gruberjonathan@gmail.com>",
-  "license": "MIT",
-  "repository": "https://github.com/grubersjoe/typeface-source-sans-variable"
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
+  "scripts": {
+    "format": "prettier --write './*.{css,json,md}' 'docs/**/*.{css,html}'"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "proseWrap": "always"
+  }
 }

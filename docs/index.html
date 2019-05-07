@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Source Sans Variable npm package</title>
+    <link href="index.css" rel="stylesheet" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #111;
+        color: #fff;
+        font-family: "Source Sans Variable", sans-serif;
+        font-kerning: normal;
+        font-variant: common-ligatures;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+
+      .container {
+        max-width: 640px;
+        margin: 4rem auto;
+      }
+
+      section {
+        margin-bottom: 5rem;
+      }
+
+      section h1 {
+        font-size: 42px;
+      }
+
+      section * {
+        font-variation-settings: inherit;
+      }
+
+      header p {
+        font-size: 120%;
+      }
+
+      h1 {
+        margin: 0 0 0.5em;
+        font-weight: 650;
+        font-size: 48px;
+      }
+
+      h2 {
+        margin: 0 0 0.75em;
+        font-weight: 550;
+        font-size: 32px;
+      }
+
+      p {
+        margin: 0 0 2rem;
+      }
+
+      a {
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+        color: skyblue;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a img {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      a:hover img {
+        transform: scale(1.08);
+      }
+
+      code {
+        display: inline-block;
+        margin: 2rem 0 4rem;
+        padding: 0.5em 1em;
+        background: #222;
+        border-radius: 0.25em;
+        color: #fff;
+      }
+
+      code,
+      .range {
+        font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
+      }
+
+      input {
+        margin-top: 0.25em;
+        margin-right: 1.5em;
+        width: 250px;
+      }
+
+      .range {
+        margin: 1.5rem 0 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 120%;
+        font-variation-settings: "wght" 500;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .char {
+        display: inline-block;
+        padding: 0.05em;
+        font-size: 120%;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .w900 {
+        font-weight: 900;
+      }
+      .w800 {
+        font-weight: 800;
+      }
+      .w700 {
+        font-weight: 700;
+      }
+      .w600 {
+        font-weight: 600;
+      }
+      .w500 {
+        font-weight: 500;
+      }
+      .w400 {
+        font-weight: 400;
+      }
+      .w300 {
+        font-weight: 300;
+      }
+      .w200 {
+        font-weight: 200;
+      }
+      .w100 {
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Typeface Source Sans Variable</h1>
+        <p>
+          <a href="https://fonts.adobe.com/fonts/source-sans">
+            npm package
+          </a>
+          to easily self-host the typeface
+          <a href="https://github.com/adobe-fonts/source-sans-pro">
+            Source Sans Variable
+          </a
+          >.
+        </p>
+      </header>
+      <main>
+        <a
+          href="https://github.com/grubersjoe/typeface-source-sans-variable"
+          title="Fork me on GitHub"
+        >
+          <img src="github.svg" width="32" style="position: absolute; top: 2rem; right: 2rem;" />
+        </a>
+
+        <code>npm install --save typeface-source-sans-variable</code>
+
+        <h2 style="margin-bottom: 2rem;">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide">
+            What is a variable font?
+          </a>
+        </h2>
+
+        <h2 style="margin-bottom: 5rem;">
+          <a href="https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/">
+            Why should I self-host fonts?
+          </a>
+          <br />
+          Performance!
+        </h2>
+
+        <section id="demo-normal">
+          <h1>
+            Source Sans Variable Normal
+          </h1>
+          <div class="range">
+            <input type="range" id="font-weight-normal" value="600" min="200" max="900" />
+            <label for="font-weight-normal">font-weight:</label>&nbsp;
+            <span class="weight" id="weight-normal">600</span>
+          </div>
+          <div>
+            <div class="char">A</div>
+            <div class="char">B</div>
+            <div class="char">C</div>
+            <div class="char">Č</div>
+            <div class="char">Ć</div>
+            <div class="char">D</div>
+            <div class="char">Đ</div>
+            <div class="char">E</div>
+            <div class="char">F</div>
+            <div class="char">G</div>
+            <div class="char">H</div>
+            <div class="char">I</div>
+            <div class="char">J</div>
+            <div class="char">K</div>
+            <div class="char">L</div>
+            <div class="char">M</div>
+            <div class="char">N</div>
+            <div class="char">O</div>
+            <div class="char">P</div>
+            <div class="char">Q</div>
+            <div class="char">R</div>
+            <div class="char">S</div>
+            <div class="char">Š</div>
+            <div class="char">T</div>
+            <div class="char">U</div>
+            <div class="char">V</div>
+            <div class="char">W</div>
+            <div class="char">X</div>
+            <div class="char">Y</div>
+            <div class="char">Z</div>
+            <div class="char">Ž</div>
+            <div class="char">a</div>
+            <div class="char">b</div>
+            <div class="char">c</div>
+            <div class="char">č</div>
+            <div class="char">ć</div>
+            <div class="char">d</div>
+            <div class="char">đ</div>
+            <div class="char">e</div>
+            <div class="char">f</div>
+            <div class="char">g</div>
+            <div class="char">h</div>
+            <div class="char">i</div>
+            <div class="char">j</div>
+            <div class="char">k</div>
+            <div class="char">l</div>
+            <div class="char">m</div>
+            <div class="char">n</div>
+            <div class="char">o</div>
+            <div class="char">p</div>
+            <div class="char">q</div>
+            <div class="char">r</div>
+            <div class="char">s</div>
+            <div class="char">š</div>
+            <div class="char">t</div>
+            <div class="char">u</div>
+            <div class="char">v</div>
+            <div class="char">w</div>
+            <div class="char">x</div>
+            <div class="char">y</div>
+            <div class="char">z</div>
+            <div class="char">ž</div>
+            <div class="char">А</div>
+            <div class="char">Б</div>
+            <div class="char">В</div>
+            <div class="char">Г</div>
+            <div class="char">Ґ</div>
+            <div class="char">Д</div>
+            <div class="char">Ђ</div>
+            <div class="char">Е</div>
+            <div class="char">Ё</div>
+            <div class="char">Є</div>
+            <div class="char">Ж</div>
+            <div class="char">З</div>
+            <div class="char">Ѕ</div>
+            <div class="char">И</div>
+            <div class="char">І</div>
+            <div class="char">Ї</div>
+            <div class="char">Й</div>
+            <div class="char">Ј</div>
+            <div class="char">К</div>
+            <div class="char">Л</div>
+            <div class="char">Љ</div>
+            <div class="char">М</div>
+            <div class="char">Н</div>
+            <div class="char">Њ</div>
+            <div class="char">О</div>
+            <div class="char">П</div>
+            <div class="char">Р</div>
+            <div class="char">С</div>
+            <div class="char">Т</div>
+            <div class="char">Ћ</div>
+            <div class="char">У</div>
+            <div class="char">Ў</div>
+            <div class="char">Ф</div>
+            <div class="char">Х</div>
+            <div class="char">Ц</div>
+            <div class="char">Ч</div>
+            <div class="char">Џ</div>
+            <div class="char">Ш</div>
+            <div class="char">Щ</div>
+            <div class="char">Ъ</div>
+            <div class="char">Ы</div>
+            <div class="char">Ь</div>
+            <div class="char">Э</div>
+            <div class="char">Ю</div>
+            <div class="char">Я</div>
+            <div class="char">а</div>
+            <div class="char">б</div>
+            <div class="char">в</div>
+            <div class="char">г</div>
+            <div class="char">ґ</div>
+            <div class="char">д</div>
+            <div class="char">ђ</div>
+            <div class="char">е</div>
+            <div class="char">ё</div>
+            <div class="char">є</div>
+            <div class="char">ж</div>
+            <div class="char">з</div>
+            <div class="char">ѕ</div>
+            <div class="char">и</div>
+            <div class="char">і</div>
+            <div class="char">ї</div>
+            <div class="char">й</div>
+            <div class="char">ј</div>
+            <div class="char">к</div>
+            <div class="char">л</div>
+            <div class="char">љ</div>
+            <div class="char">м</div>
+            <div class="char">н</div>
+            <div class="char">њ</div>
+            <div class="char">о</div>
+            <div class="char">п</div>
+            <div class="char">р</div>
+            <div class="char">с</div>
+            <div class="char">т</div>
+            <div class="char">ћ</div>
+            <div class="char">у</div>
+            <div class="char">ў</div>
+            <div class="char">ф</div>
+            <div class="char">х</div>
+            <div class="char">ц</div>
+            <div class="char">ч</div>
+            <div class="char">џ</div>
+            <div class="char">ш</div>
+            <div class="char">щ</div>
+            <div class="char">ъ</div>
+            <div class="char">ы</div>
+            <div class="char">ь</div>
+            <div class="char">э</div>
+            <div class="char">ю</div>
+            <div class="char">я</div>
+            <div class="char">Α</div>
+            <div class="char">Β</div>
+            <div class="char">Γ</div>
+            <div class="char">Δ</div>
+            <div class="char">Ε</div>
+            <div class="char">Ζ</div>
+            <div class="char">Η</div>
+            <div class="char">Θ</div>
+            <div class="char">Ι</div>
+            <div class="char">Κ</div>
+            <div class="char">Λ</div>
+            <div class="char">Μ</div>
+            <div class="char">Ν</div>
+            <div class="char">Ξ</div>
+            <div class="char">Ο</div>
+            <div class="char">Π</div>
+            <div class="char">Ρ</div>
+            <div class="char">Σ</div>
+            <div class="char">Τ</div>
+            <div class="char">Υ</div>
+            <div class="char">Φ</div>
+            <div class="char">Χ</div>
+            <div class="char">Ψ</div>
+            <div class="char">Ω</div>
+            <div class="char">α</div>
+            <div class="char">β</div>
+            <div class="char">γ</div>
+            <div class="char">δ</div>
+            <div class="char">ε</div>
+            <div class="char">ζ</div>
+            <div class="char">η</div>
+            <div class="char">θ</div>
+            <div class="char">ι</div>
+            <div class="char">κ</div>
+            <div class="char">λ</div>
+            <div class="char">μ</div>
+            <div class="char">ν</div>
+            <div class="char">ξ</div>
+            <div class="char">ο</div>
+            <div class="char">π</div>
+            <div class="char">ρ</div>
+            <div class="char">σ</div>
+            <div class="char">τ</div>
+            <div class="char">υ</div>
+            <div class="char">φ</div>
+            <div class="char">χ</div>
+            <div class="char">ψ</div>
+            <div class="char">ω</div>
+            <div class="char">ά</div>
+            <div class="char">Ά</div>
+            <div class="char">έ</div>
+            <div class="char">Έ</div>
+            <div class="char">έ</div>
+            <div class="char">Ή</div>
+            <div class="char">ί</div>
+            <div class="char">ϊ</div>
+            <div class="char">ΐ</div>
+            <div class="char">Ί</div>
+            <div class="char">ό</div>
+            <div class="char">Ό</div>
+            <div class="char">ύ</div>
+            <div class="char">ΰ</div>
+            <div class="char">ϋ</div>
+            <div class="char">Ύ</div>
+            <div class="char">Ϋ</div>
+            <div class="char">ὰ</div>
+            <div class="char">ά</div>
+            <div class="char">ὲ</div>
+            <div class="char">έ</div>
+            <div class="char">ὴ</div>
+            <div class="char">ή</div>
+            <div class="char">ὶ</div>
+            <div class="char">ί</div>
+            <div class="char">ὸ</div>
+            <div class="char">ό</div>
+            <div class="char">ὺ</div>
+            <div class="char">ύ</div>
+            <div class="char">ὼ</div>
+            <div class="char">ώ</div>
+            <div class="char">Ώ</div>
+            <div class="char">Ă</div>
+            <div class="char">Â</div>
+            <div class="char">Ê</div>
+            <div class="char">Ô</div>
+            <div class="char">Ơ</div>
+            <div class="char">Ư</div>
+            <div class="char">ă</div>
+            <div class="char">â</div>
+            <div class="char">ê</div>
+            <div class="char">ô</div>
+            <div class="char">ơ</div>
+            <div class="char">ư</div>
+            <div class="char">1</div>
+            <div class="char">2</div>
+            <div class="char">3</div>
+            <div class="char">4</div>
+            <div class="char">5</div>
+            <div class="char">6</div>
+            <div class="char">7</div>
+            <div class="char">8</div>
+            <div class="char">9</div>
+            <div class="char">0</div>
+            <div class="char">‘</div>
+            <div class="char">?</div>
+            <div class="char">’</div>
+            <div class="char">“</div>
+            <div class="char">!</div>
+            <div class="char">”</div>
+            <div class="char">(</div>
+            <div class="char">%</div>
+            <div class="char">)</div>
+            <div class="char">[</div>
+            <div class="char">#</div>
+            <div class="char">]</div>
+            <div class="char">{</div>
+            <div class="char">@</div>
+            <div class="char">}</div>
+            <div class="char">/</div>
+            <div class="char">&amp;</div>
+            <div class="char">\</div>
+            <div class="char">&lt;</div>
+            <div class="char">-</div>
+            <div class="char">+</div>
+            <div class="char">÷</div>
+            <div class="char">×</div>
+            <div class="char">=</div>
+            <div class="char">&gt;</div>
+            <div class="char">®</div>
+            <div class="char">©</div>
+            <div class="char">$</div>
+            <div class="char">€</div>
+            <div class="char">£</div>
+            <div class="char">¥</div>
+            <div class="char">¢</div>
+            <div class="char">:</div>
+            <div class="char">;</div>
+            <div class="char">,</div>
+            <div class="char">.</div>
+            <div class="char">*</div>
+          </div>
+        </section>
+
+        <section id="demo-italic">
+          <h1 class="italic">
+            Source Sans Variable Italic
+          </h1>
+          <div class="range">
+            <input type="range" id="font-weight-italic" value="600" min="200" max="900" />
+            <label for="font-weight-italic">font-weight:</label>&nbsp;
+            <span class="weight" id="weight-italic">600</span>
+          </div>
+          <div class="italic">
+            <div class="char">A</div>
+            <div class="char">B</div>
+            <div class="char">C</div>
+            <div class="char">Č</div>
+            <div class="char">Ć</div>
+            <div class="char">D</div>
+            <div class="char">Đ</div>
+            <div class="char">E</div>
+            <div class="char">F</div>
+            <div class="char">G</div>
+            <div class="char">H</div>
+            <div class="char">I</div>
+            <div class="char">J</div>
+            <div class="char">K</div>
+            <div class="char">L</div>
+            <div class="char">M</div>
+            <div class="char">N</div>
+            <div class="char">O</div>
+            <div class="char">P</div>
+            <div class="char">Q</div>
+            <div class="char">R</div>
+            <div class="char">S</div>
+            <div class="char">Š</div>
+            <div class="char">T</div>
+            <div class="char">U</div>
+            <div class="char">V</div>
+            <div class="char">W</div>
+            <div class="char">X</div>
+            <div class="char">Y</div>
+            <div class="char">Z</div>
+            <div class="char">Ž</div>
+            <div class="char">a</div>
+            <div class="char">b</div>
+            <div class="char">c</div>
+            <div class="char">č</div>
+            <div class="char">ć</div>
+            <div class="char">d</div>
+            <div class="char">đ</div>
+            <div class="char">e</div>
+            <div class="char">f</div>
+            <div class="char">g</div>
+            <div class="char">h</div>
+            <div class="char">i</div>
+            <div class="char">j</div>
+            <div class="char">k</div>
+            <div class="char">l</div>
+            <div class="char">m</div>
+            <div class="char">n</div>
+            <div class="char">o</div>
+            <div class="char">p</div>
+            <div class="char">q</div>
+            <div class="char">r</div>
+            <div class="char">s</div>
+            <div class="char">š</div>
+            <div class="char">t</div>
+            <div class="char">u</div>
+            <div class="char">v</div>
+            <div class="char">w</div>
+            <div class="char">x</div>
+            <div class="char">y</div>
+            <div class="char">z</div>
+            <div class="char">ž</div>
+            <div class="char">А</div>
+            <div class="char">Б</div>
+            <div class="char">В</div>
+            <div class="char">Г</div>
+            <div class="char">Ґ</div>
+            <div class="char">Д</div>
+            <div class="char">Ђ</div>
+            <div class="char">Е</div>
+            <div class="char">Ё</div>
+            <div class="char">Є</div>
+            <div class="char">Ж</div>
+            <div class="char">З</div>
+            <div class="char">Ѕ</div>
+            <div class="char">И</div>
+            <div class="char">І</div>
+            <div class="char">Ї</div>
+            <div class="char">Й</div>
+            <div class="char">Ј</div>
+            <div class="char">К</div>
+            <div class="char">Л</div>
+            <div class="char">Љ</div>
+            <div class="char">М</div>
+            <div class="char">Н</div>
+            <div class="char">Њ</div>
+            <div class="char">О</div>
+            <div class="char">П</div>
+            <div class="char">Р</div>
+            <div class="char">С</div>
+            <div class="char">Т</div>
+            <div class="char">Ћ</div>
+            <div class="char">У</div>
+            <div class="char">Ў</div>
+            <div class="char">Ф</div>
+            <div class="char">Х</div>
+            <div class="char">Ц</div>
+            <div class="char">Ч</div>
+            <div class="char">Џ</div>
+            <div class="char">Ш</div>
+            <div class="char">Щ</div>
+            <div class="char">Ъ</div>
+            <div class="char">Ы</div>
+            <div class="char">Ь</div>
+            <div class="char">Э</div>
+            <div class="char">Ю</div>
+            <div class="char">Я</div>
+            <div class="char">а</div>
+            <div class="char">б</div>
+            <div class="char">в</div>
+            <div class="char">г</div>
+            <div class="char">ґ</div>
+            <div class="char">д</div>
+            <div class="char">ђ</div>
+            <div class="char">е</div>
+            <div class="char">ё</div>
+            <div class="char">є</div>
+            <div class="char">ж</div>
+            <div class="char">з</div>
+            <div class="char">ѕ</div>
+            <div class="char">и</div>
+            <div class="char">і</div>
+            <div class="char">ї</div>
+            <div class="char">й</div>
+            <div class="char">ј</div>
+            <div class="char">к</div>
+            <div class="char">л</div>
+            <div class="char">љ</div>
+            <div class="char">м</div>
+            <div class="char">н</div>
+            <div class="char">њ</div>
+            <div class="char">о</div>
+            <div class="char">п</div>
+            <div class="char">р</div>
+            <div class="char">с</div>
+            <div class="char">т</div>
+            <div class="char">ћ</div>
+            <div class="char">у</div>
+            <div class="char">ў</div>
+            <div class="char">ф</div>
+            <div class="char">х</div>
+            <div class="char">ц</div>
+            <div class="char">ч</div>
+            <div class="char">џ</div>
+            <div class="char">ш</div>
+            <div class="char">щ</div>
+            <div class="char">ъ</div>
+            <div class="char">ы</div>
+            <div class="char">ь</div>
+            <div class="char">э</div>
+            <div class="char">ю</div>
+            <div class="char">я</div>
+            <div class="char">Α</div>
+            <div class="char">Β</div>
+            <div class="char">Γ</div>
+            <div class="char">Δ</div>
+            <div class="char">Ε</div>
+            <div class="char">Ζ</div>
+            <div class="char">Η</div>
+            <div class="char">Θ</div>
+            <div class="char">Ι</div>
+            <div class="char">Κ</div>
+            <div class="char">Λ</div>
+            <div class="char">Μ</div>
+            <div class="char">Ν</div>
+            <div class="char">Ξ</div>
+            <div class="char">Ο</div>
+            <div class="char">Π</div>
+            <div class="char">Ρ</div>
+            <div class="char">Σ</div>
+            <div class="char">Τ</div>
+            <div class="char">Υ</div>
+            <div class="char">Φ</div>
+            <div class="char">Χ</div>
+            <div class="char">Ψ</div>
+            <div class="char">Ω</div>
+            <div class="char">α</div>
+            <div class="char">β</div>
+            <div class="char">γ</div>
+            <div class="char">δ</div>
+            <div class="char">ε</div>
+            <div class="char">ζ</div>
+            <div class="char">η</div>
+            <div class="char">θ</div>
+            <div class="char">ι</div>
+            <div class="char">κ</div>
+            <div class="char">λ</div>
+            <div class="char">μ</div>
+            <div class="char">ν</div>
+            <div class="char">ξ</div>
+            <div class="char">ο</div>
+            <div class="char">π</div>
+            <div class="char">ρ</div>
+            <div class="char">σ</div>
+            <div class="char">τ</div>
+            <div class="char">υ</div>
+            <div class="char">φ</div>
+            <div class="char">χ</div>
+            <div class="char">ψ</div>
+            <div class="char">ω</div>
+            <div class="char">ά</div>
+            <div class="char">Ά</div>
+            <div class="char">έ</div>
+            <div class="char">Έ</div>
+            <div class="char">έ</div>
+            <div class="char">Ή</div>
+            <div class="char">ί</div>
+            <div class="char">ϊ</div>
+            <div class="char">ΐ</div>
+            <div class="char">Ί</div>
+            <div class="char">ό</div>
+            <div class="char">Ό</div>
+            <div class="char">ύ</div>
+            <div class="char">ΰ</div>
+            <div class="char">ϋ</div>
+            <div class="char">Ύ</div>
+            <div class="char">Ϋ</div>
+            <div class="char">ὰ</div>
+            <div class="char">ά</div>
+            <div class="char">ὲ</div>
+            <div class="char">έ</div>
+            <div class="char">ὴ</div>
+            <div class="char">ή</div>
+            <div class="char">ὶ</div>
+            <div class="char">ί</div>
+            <div class="char">ὸ</div>
+            <div class="char">ό</div>
+            <div class="char">ὺ</div>
+            <div class="char">ύ</div>
+            <div class="char">ὼ</div>
+            <div class="char">ώ</div>
+            <div class="char">Ώ</div>
+            <div class="char">Ă</div>
+            <div class="char">Â</div>
+            <div class="char">Ê</div>
+            <div class="char">Ô</div>
+            <div class="char">Ơ</div>
+            <div class="char">Ư</div>
+            <div class="char">ă</div>
+            <div class="char">â</div>
+            <div class="char">ê</div>
+            <div class="char">ô</div>
+            <div class="char">ơ</div>
+            <div class="char">ư</div>
+            <div class="char">1</div>
+            <div class="char">2</div>
+            <div class="char">3</div>
+            <div class="char">4</div>
+            <div class="char">5</div>
+            <div class="char">6</div>
+            <div class="char">7</div>
+            <div class="char">8</div>
+            <div class="char">9</div>
+            <div class="char">0</div>
+            <div class="char">‘</div>
+            <div class="char">?</div>
+            <div class="char">’</div>
+            <div class="char">“</div>
+            <div class="char">!</div>
+            <div class="char">”</div>
+            <div class="char">(</div>
+            <div class="char">%</div>
+            <div class="char">)</div>
+            <div class="char">[</div>
+            <div class="char">#</div>
+            <div class="char">]</div>
+            <div class="char">{</div>
+            <div class="char">@</div>
+            <div class="char">}</div>
+            <div class="char">/</div>
+            <div class="char">&amp;</div>
+            <div class="char">\</div>
+            <div class="char">&lt;</div>
+            <div class="char">-</div>
+            <div class="char">+</div>
+            <div class="char">÷</div>
+            <div class="char">×</div>
+            <div class="char">=</div>
+            <div class="char">&gt;</div>
+            <div class="char">®</div>
+            <div class="char">©</div>
+            <div class="char">$</div>
+            <div class="char">€</div>
+            <div class="char">£</div>
+            <div class="char">¥</div>
+            <div class="char">¢</div>
+            <div class="char">:</div>
+            <div class="char">;</div>
+            <div class="char">,</div>
+            <div class="char">.</div>
+            <div class="char">*</div>
+          </div>
+        </section>
+
+        <section id="demo-text">
+          <h1>Source Sans Variable Text</h1>
+          <div class="range">
+            <input type="range" id="font-weight-text" value="400" min="200" max="900" step="10" />
+            <label for="font-weight-text">font-weight:</label>&nbsp;
+            <span class="weight" id="weight-text">400</span>
+          </div>
+          <p>
+            Simon Wheeler backed me into a corner and blockaded me there with his chair, and then
+            sat me down and reeled off the monotonous narrative which follows this paragraph. Simon
+            Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me
+            sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
+          </p>
+
+          <p class="italic">
+            Simon Wheeler backed me into a corner and blockaded me there with his chair, and then
+            sat me down and reeled off the monotonous narrative which follows this paragraph. Simon
+            Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me
+            sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
+          </p>
+        </section>
+
+        <p>
+          <a href="https://www.npmjs.com/package/typeface-source-sans-variable">
+            Source Sans Variable on GitHub
+          </a>
+          <span style="margin: 0 0.2em">&bull;</span>
+          Package by <a href="https://grubersjoe.de">@grubersjoe</a>
+        </p>
+      </main>
+    </div>
+
+    <script>
+      function setWeight(id, weight, init) {
+        document.getElementById(`demo-${id}`).style.fontVariationSettings = `"wght" ${weight}`;
+        document.getElementById(`weight-${id}`).innerText = weight;
+
+        if (init) {
+          document.getElementById(`font-weight-${id}`).value = weight;
+        }
+      }
+
+      setWeight("normal", 600, true);
+      setWeight("italic", 600, true);
+      setWeight("text", 400, true);
+
+      document.querySelectorAll("input").forEach(input => {
+        ["change", "input"].forEach(eventType => {
+          input.addEventListener(eventType, event => {
+            const { target } = event;
+
+            if (target.id.includes("normal")) {
+              setWeight("normal", target.value);
+            } else if (target.id.includes("italic")) {
+              setWeight("italic", target.value);
+            } else {
+              setWeight("text", target.value);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
